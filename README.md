@@ -5,6 +5,8 @@ Após clonar o repositório para o computador, é necessário instalar a ferrame
 
 `choco install linkshellextension`
 
+A documentação para a ferramenta (LSE) está disponível em [linkshellextension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html)
+
 Após a instalação, basta selecionar os arquivos com botão direito e criar o link simbólico com a ferramenta.
 
 ## Caminhos para Neovim e plugin UltiSnips
