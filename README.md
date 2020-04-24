@@ -7,13 +7,11 @@ Como instalar [Chocolatey](https://chocolatey.org/install).
 
 ## Programas essenciais instalados com chocolatey
 
-`choco install git neovim autohotkey sumatrapdf.install`
+`choco install git neovim autohotkey linkshellextension`
 
 # Instalação dotfiles
 
-Após clonar o repositório para o computador, é necessário instalar a ferramenta *linkshellextension* com o comando:
-
-`choco install linkshellextension`
+Após clonar o repositório para o computador, usar a ferramenta *linkshellextension* para criar os links simbólicos das configurações em seus respectivos diretórios.
 
 A documentação para a ferramenta (LSE) está disponível em [linkshellextension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html)
 
