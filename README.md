@@ -20,7 +20,7 @@ Após a instalação, basta selecionar os arquivos com botão direito e criar o 
 ## Caminhos para os arquivos de configurações
 
 |  Programa  	|                                   Localização                                  	|
-|:----------:	|:------------------------------------------------------------------------------:	|
+|:-----------	|:------------------------------------------------------------------------------	|
 | neovim     	| `C:\Users\victo\AppData\Local\nvim\init.vim`                                   	|
 | UltiSnips  	| `C:\Users\victo\AppData\Local\nvim\my_snippets\tex.snippets`                   	|
 | youtube-dl 	| `C:\Users\victo\youtube-dl.conf`                                               	|
