@@ -55,6 +55,8 @@ setlocal spell
 set spelllang=pt_br,en_us
 set splitbelow splitright
 set textwidth=80
+set colorcolumn=81
+set cursorline
 
 "spell check shortcut Ctrl+L
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
@@ -96,7 +98,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 let NERDTreeIgnore=['\.aux$', '\.synctex.gz$','\.fdb_latexmk', '\.fls', '\.log', '\.bbl', '\.docx', '\.pdf', '\.run.xml', '\.bcf', '\.blg', '\.lof', '\.out', '\.toc']
 
-nnoremap <leader>ss :source %<CR>
+nnoremap <leader>so :source C:/Users/victo/AppData/Local/nvim/init.vim<CR>
 "após pesquisar algo com (/), (esc)x2 apaga o highlight
 nnoremap <esc><esc> :noh<CR>
 
