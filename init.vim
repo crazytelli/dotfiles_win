@@ -96,9 +96,10 @@ autocmd BufWritePre * %s/\s\+$//e
 map <leader>nd :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-let NERDTreeIgnore=['\.aux$', '\.synctex.gz$','\.fdb_latexmk', '\.fls', '\.log', '\.bbl', '\.docx', '\.pdf', '\.run.xml', '\.bcf', '\.blg', '\.lof', '\.out', '\.toc']
+let NERDTreeIgnore=['\.aux$', '\.synctex.gz$','\.fdb_latexmk', '\.fls', '\.log',
+    '\.bbl', '\.docx', '\.pdf', '\.run.xml', '\.bcf', '\.blg', '\.lof', '\.out',
+    '\.toc']
 
-nnoremap <leader>so :source C:/Users/victo/AppData/Local/nvim/init.vim<CR>
 "após pesquisar algo com (/), (esc)x2 apaga o highlight
 nnoremap <esc><esc> :noh<CR>
 
@@ -125,8 +126,8 @@ call deoplete#custom#var('omni', 'input_patterns', {
             "\ },
             "\}
 
-"" Usando plugin FastFold:
-""let g:tex_fold_enabled = 1
+" Usando plugin FastFold:
+"let g:tex_fold_enabled = 1
 
 let g:tex_conceal='abdmg'
 set conceallevel=1
@@ -141,11 +142,10 @@ let g:vimtex_view_general_options_latexmk = '-reuse-instance'
 " Buffer interpreta .tex e .cls como arquivos LaTeX
 autocmd BufRead,BufNewFile *.tex,*.cls set filetype=tex
 
-"" Compile on initialization, cleanup on quit
+" Cleanup LaTeX auxiliary files  on quit
 augroup vimtex_event_1
     au!
     au User VimtexEventQuit     call vimtex#compiler#clean(0)
-    "au User VimtexEventInitPost call vimtex#compiler#compile()
 augroup END
 
 " This is new style - Autocomplete for .tex files
@@ -153,7 +153,14 @@ augroup END
 nnoremap <leader>fe :VimtexCompile<CR>
 nnoremap <leader>tt :VimtexTocOpen<CR>
 nnoremap <leader>de :VimtexErrors<CR>
+
+" ajusta tamanho do buffer atual
 nnoremap <Up> :resize +2<CR>
 nnoremap <Down> :resize -2<CR>
 nnoremap <Left> :vertical resize +2<CR>
 nnoremap <Right> :vertical resize -2<CR>
+
+" Move a linha selecionada pra cima ou para baixo
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
+
