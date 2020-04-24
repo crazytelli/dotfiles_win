@@ -5,7 +5,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetNumLockState AlwaysOn
 
 SetCapsLockState, AlwaysOff ;define CapsLock como sempre desativado
-;Alt & CapsLock::CapsLock  ;ativa CapsLock com a combinação Alt+CapsLock
+Alt & CapsLock::CapsLock  ;ativa CapsLock com a combinação Alt+CapsLock
 
 ;CapsLock::Escape
 
