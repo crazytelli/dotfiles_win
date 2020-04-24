@@ -96,9 +96,7 @@ autocmd BufWritePre * %s/\s\+$//e
 map <leader>nd :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-let NERDTreeIgnore=['\.aux$', '\.synctex.gz$','\.fdb_latexmk', '\.fls', '\.log',
-    '\.bbl', '\.docx', '\.pdf', '\.run.xml', '\.bcf', '\.blg', '\.lof', '\.out',
-    '\.toc']
+let NERDTreeIgnore=['\.aux$', '\.synctex.gz$','\.fdb_latexmk', '\.fls', '\.log', '\.bbl', '\.docx', '\.pdf', '\.run.xml', '\.bcf', '\.blg', '\.lof', '\.out', '\.toc']
 
 "após pesquisar algo com (/), (esc)x2 apaga o highlight
 nnoremap <esc><esc> :noh<CR>
