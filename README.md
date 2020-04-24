@@ -7,11 +7,11 @@ Como instalar [Chocolatey](https://chocolatey.org/install).
 
 ## Programas essenciais instalados com chocolatey
 
-`choco install git neovim sumatrapdf.install`
+`choco install git neovim autohotkey sumatrapdf.install`
 
 # Instalação dotfiles
 
-Após clonar o repositório para o computador, é necessário instalar a ferramenta linkshellextension com o comando:
+Após clonar o repositório para o computador, é necessário instalar a ferramenta *linkshellextension* com o comando:
 
 `choco install linkshellextension`
 
@@ -27,3 +27,8 @@ Após a instalação, basta selecionar os arquivos com botão direito e criar o 
 ## youtube-dl
 
 Criar um *symbolic link* para `youtube-dl.conf` em `C:\Users\victo`
+
+# Autohotkey Script
+
+Criar *symbolic link* para ahk.ahk iniciar juntamente com o Windows:
+`C:\Users\victo\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
