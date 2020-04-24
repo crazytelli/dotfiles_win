@@ -54,7 +54,7 @@ set wildmode=longest,list,full
 setlocal spell
 set spelllang=pt_br,en_us
 set splitbelow splitright
-set textwidth=80
+"set textwidth=80
 set colorcolumn=81
 set cursorline
 
@@ -139,6 +139,7 @@ let g:vimtex_view_general_options_latexmk = '-reuse-instance'
 
 " Buffer interpreta .tex e .cls como arquivos LaTeX
 autocmd BufRead,BufNewFile *.tex,*.cls set filetype=tex
+autocmd FileType tex set textwidth=80
 
 " Cleanup LaTeX auxiliary files  on quit
 augroup vimtex_event_1
@@ -147,7 +148,7 @@ augroup vimtex_event_1
 augroup END
 
 " This is new style - Autocomplete for .tex files
-""Mapeamentos de tecla para LaTeX
+" Mapeamentos de tecla para LaTeX
 nnoremap <leader>fe :VimtexCompile<CR>
 nnoremap <leader>tt :VimtexTocOpen<CR>
 nnoremap <leader>de :VimtexErrors<CR>
@@ -161,4 +162,3 @@ nnoremap <Right> :vertical resize -2<CR>
 " Move a linha selecionada pra cima ou para baixo
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
-
