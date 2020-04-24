@@ -28,7 +28,7 @@ Após a instalação, basta selecionar os arquivos com botão direito e criar o 
 
 Criar um *symbolic link* para `youtube-dl.conf` em `C:\Users\victo`
 
-# Autohotkey Script
+## Autohotkey Script
 
 Criar *symbolic link* para ahk.ahk iniciar juntamente com o Windows:
 `C:\Users\victo\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
