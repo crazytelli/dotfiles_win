@@ -9,7 +9,7 @@ Como instalar [Chocolatey](https://chocolatey.org/install).
 
 `choco install git neovim autohotkey linkshellextension`
 
-# Instalação dotfiles
+# Instalação dotfiles com *symbolic links*
 
 Após clonar o repositório para o computador, usar a ferramenta *linkshellextension* para criar os links simbólicos das configurações em seus respectivos diretórios.
 
@@ -17,16 +17,11 @@ A documentação para a ferramenta (LSE) está disponível em [linkshellextensio
 
 Após a instalação, basta selecionar os arquivos com botão direito e criar o link simbólico com a ferramenta no diretório desejado.
 
-## Caminhos para Neovim e plugin UltiSnips
+## Caminhos para os arquivos de configurações
 
-1. neovim:          `C:\Users\victo\AppData\Local\nvim\init.vim`
-2. LaTeX snippets:  `C:\Users\victo\AppData\Local\nvim\my_snippets\tex.snippets`
-
-## youtube-dl
-
-Criar um *symbolic link* para `youtube-dl.conf` em `C:\Users\victo`
-
-## Autohotkey Script
-
-Criar *symbolic link* para ahk.ahk iniciar juntamente com o Windows:
-`C:\Users\victo\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+|  Programa  	|                                   Localização                                  	|
+|:----------:	|:------------------------------------------------------------------------------:	|
+| neovim     	| `C:\Users\victo\AppData\Local\nvim\init.vim`                                   	|
+| UltiSnips  	| `C:\Users\victo\AppData\Local\nvim\my_snippets\tex.snippets`                   	|
+| youtube-dl 	| `C:\Users\victo\youtube-dl.conf`                                               	|
+| autohotkey 	| `C:\Users\victo\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup` 	|
