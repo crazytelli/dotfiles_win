@@ -108,6 +108,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 imap jj <esc>
+map <C-/> <Plug>NERDCommenterToggle
+vmap <C-/> <Plug>NERDCommenterToggle<CR>gv
 
 " ajusta tamanho do buffer atual
 nnoremap <Up> :resize +2<CR>
