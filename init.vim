@@ -11,7 +11,8 @@ else
 endif
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'lervag/vimtex'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -41,9 +42,9 @@ colorscheme gruvbox
 set background=dark
 set termguicolors
 set encoding=utf-8
+set fileencoding=utf-8
 set number relativenumber
 set noswapfile
-"set nocompatible
 set smartindent
 set nowrap
 set tabstop=4 softtabstop=4
@@ -54,12 +55,13 @@ set wildmode=longest,list,full
 setlocal spell
 set spelllang=pt_br,en_us
 set splitbelow splitright
-"set textwidth=80
 set colorcolumn=81
 set cursorline
 
 "spell check shortcut Ctrl+L
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
+let g:airline_theme='gruvbox'
 
 " Vim-gitgutter settings
 let g:gitgutter_enabled = 1
@@ -74,7 +76,7 @@ let g:UltiSnipsExpandTrigger='<tab>'
 let g:UltiSnipsJumpForwardTrigger='<tab>'
 let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 
-"Pasta onde est„o os snippets - pasta: ("my_snippets")
+"Pasta onde est√£o os snippets - pasta: ("my_snippets")
 "A pasta pode estar em qualquer lugar em :echo &runtimepath
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "my_snippets"]
 
@@ -98,13 +100,24 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 let NERDTreeIgnore=['\.aux$', '\.synctex.gz$','\.fdb_latexmk', '\.fls', '\.log', '\.bbl', '\.docx', '\.pdf', '\.run.xml', '\.bcf', '\.blg', '\.lof', '\.out', '\.toc']
 
-"apÛs pesquisar algo com (/), (esc)x2 apaga o highlight
+"ap√≥s pesquisar algo com (/), (esc)x2 apaga o highlight
 nnoremap <esc><esc> :noh<CR>
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+imap jj <esc>
+
+" ajusta tamanho do buffer atual
+nnoremap <Up> :resize +2<CR>
+nnoremap <Down> :resize -2<CR>
+nnoremap <Left> :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
+
+" Move a linha selecionada pra cima ou para baixo
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
 
 "------------------ settings for Vimtex ------------------------------
 let g:tex_flavor = 'latex'
@@ -152,13 +165,3 @@ augroup END
 nnoremap <leader>fe :VimtexCompile<CR>
 nnoremap <leader>tt :VimtexTocOpen<CR>
 nnoremap <leader>de :VimtexErrors<CR>
-
-" ajusta tamanho do buffer atual
-nnoremap <Up> :resize +2<CR>
-nnoremap <Down> :resize -2<CR>
-nnoremap <Left> :vertical resize +2<CR>
-nnoremap <Right> :vertical resize -2<CR>
-
-" Move a linha selecionada pra cima ou para baixo
-xnoremap K :move '<-2<CR>gv-gv
-xnoremap J :move '>+1<CR>gv-gv
