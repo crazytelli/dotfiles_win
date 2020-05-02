@@ -28,6 +28,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'junegunn/goyo.vim'
 Plug 'Konfekt/FastFold'
 Plug 'airblade/vim-gitgutter'
+"Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 "Plug 'dylanaraps/wal'
 "Plug 'skywind3000/asyncrun.vim'
 "Plug 'Chiel92/vim-autoformat'
@@ -137,7 +138,7 @@ call deoplete#custom#var('omni', 'input_patterns', {
             "\ 'envs' : {
             "\   'blacklist' : ['figure'],
             "\ },
-            "\}
+"\}
 
 " Usando plugin FastFold:
 "let g:tex_fold_enabled = 1
