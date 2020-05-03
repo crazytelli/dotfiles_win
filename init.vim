@@ -155,7 +155,7 @@ let g:vimtex_view_general_options_latexmk = '-reuse-instance'
 
 " Buffer interpreta .tex e .cls como arquivos LaTeX
 autocmd BufRead,BufNewFile *.tex,*.cls set filetype=tex
-autocmd FileType tex set textwidth=80
+autocmd FileType tex set textwidth=80 wrap
 
 " Cleanup LaTeX auxiliary files  on quit
 augroup vimtex_event_1
