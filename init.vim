@@ -25,6 +25,8 @@ Plug 'zchee/deoplete-jedi'
 Plug 'sbdchd/neoformat'
 Plug 'neomake/neomake'
 Plug 'davidhalter/jedi-vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'Konfekt/FastFold'
 Plug 'airblade/vim-gitgutter'
