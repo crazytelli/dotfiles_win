@@ -30,6 +30,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'Konfekt/FastFold'
 Plug 'airblade/vim-gitgutter'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 "Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 "Plug 'dylanaraps/wal'
 "Plug 'skywind3000/asyncrun.vim'
