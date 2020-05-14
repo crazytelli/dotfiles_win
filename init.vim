@@ -31,6 +31,9 @@ Plug 'junegunn/goyo.vim'
 Plug 'Konfekt/FastFold'
 Plug 'airblade/vim-gitgutter'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+"Plug 'justinmk/vim-sneak'
+Plug 'tpope/vim-surround'
+
 "Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 "Plug 'dylanaraps/wal'
 "Plug 'skywind3000/asyncrun.vim'
@@ -144,7 +147,7 @@ call deoplete#custom#var('omni', 'input_patterns', {
 "\}
 
 " Usando plugin FastFold:
-"let g:tex_fold_enabled = 1
+let g:tex_fold_enabled = 1
 
 let g:tex_conceal='abdmg'
 set conceallevel=1
