@@ -7,6 +7,8 @@ SetNumLockState AlwaysOn
 SetCapsLockState, AlwaysOff ;define CapsLock como sempre desativado
 Alt & CapsLock::CapsLock  ;ativa CapsLock com a combinação Alt+CapsLock
 
+CapsLock::ScrollLock
+
 ;CapsLock::Escape ; Define CapsLock como ESC
 
 ;-----------------------------------------------------------------------
