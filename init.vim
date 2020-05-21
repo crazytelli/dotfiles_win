@@ -33,7 +33,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 "Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-surround'
-
+Plug 'ThePrimeagen/vim-be-good'
 "Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 "Plug 'dylanaraps/wal'
 "Plug 'skywind3000/asyncrun.vim'
@@ -134,7 +134,7 @@ call deoplete#custom#var('omni', 'input_patterns', {
             \ 'tex': g:vimtex#re#deoplete
             \})
 
-"let g:vimtex_compiler_progname = 'nvr'
+let g:vimtex_compiler_progname = 'nvr'
 "let g:vimtex_indent_enabled=1
 "let g:vimtex_fold_enabled=1
 "let g:vimtex_fold_manual=0
@@ -154,7 +154,7 @@ set conceallevel=1
 hi Conceal ctermbg=none
 
 let g:vimtex_quickfix_mode=0
-let g:vimtex_view_general_viewer = 'SumatraPDF'
+"let g:vimtex_view_general_viewer = 'SumatraPDF'
 let g:vimtex_view_general_options
             \ = '-reuse-instance -forward-search @tex @line @pdf'
 let g:vimtex_view_general_options_latexmk = '-reuse-instance'
