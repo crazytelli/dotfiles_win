@@ -17,20 +17,41 @@ def math():
 		return False
 endglobal
 
-snippet preamble "Template Exercicios" b
+snippet aula "Template Exercicios" b
 \documentclass[a4paper,fleqn,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage{csquotes}
 \usepackage[tmargin=2cm,lmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry}
-\usepackage{amsmath, amssymb, mathtools}
+\usepackage{amsmath,amssymb,mathtools}
 \usepackage[output-decimal-marker={,},per-mode=symbol]{siunitx}
+\usepackage{cancel}
 \usepackage{enumitem}
-\usepackage{microtype}
-
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{cancel}
+%\usepackage{microtype}
 \usepackage{todonotes}
 \reversemarginpar
 \setlength{\marginparwidth}{2cm}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linktoc=all,linkcolor=blue,citecolor=black,urlcolor=blue}
+
+\titleformat{\section}{\Large\bfseries} {} {0em} {} %[\titlerule]
+\titleformat{\subsection}[runin]{\bfseries\large}{}{0em}{}[ -- ]
+\titleformat{\subsubsection} {\bfseries} {} {0em} {}%[\titlerule]
+
+% Permite inserir a subseção "Resolução" com o comando \resol
+\newcommand{\resol}{\subsubsection{\underline{Resolução:}}}
+
+\newlist{enumalpha}{enumerate}{1}   % Cria um novo ambiente enumerate com letras
+\setlist[enumalpha]{label=\alph*)}  % pode-se criar vários sem alterar o original
+
+
 \author{Victor Locatelli}
 \title{$1}
 \date{$2}
