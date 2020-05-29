@@ -64,6 +64,7 @@ set spelllang=pt_br,en_us
 set splitbelow splitright
 set colorcolumn=81
 set cursorline
+set clipboard+=unnamedplus
 
 "spell check shortcut Ctrl+L
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
