@@ -45,7 +45,6 @@ call plug#end()
 syntax on
 filetype plugin on
 colorscheme gruvbox
-"colorscheme nord
 set background=dark
 set termguicolors
 set encoding=utf-8
