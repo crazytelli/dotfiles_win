@@ -15,6 +15,7 @@ CapsLock::ScrollLock
 
 ;AppsKey::Ctrl 	; substitui o botão ao lado do AltGr pelo Ctrl.
 
+;Define a janela seleciona como persistente
 ^SPACE::  Winset, Alwaysontop, , A
 
 ;-----------------------Atalhos para AltGr------------------------------
@@ -23,7 +24,7 @@ CapsLock::ScrollLock
 <^>!c:: Run calc
 Return
 
-<^>!f:: ;AltGr + f para abrir uma nova janela do firefox
+<^>!f:: ;AltGr + f para abrir uma nova janela do navegador
 Run, brave
 Return
 
