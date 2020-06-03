@@ -13,7 +13,7 @@ CapsLock::ScrollLock
 
 ;-----------------------------------------------------------------------
 
-;AppsKey::Ctrl 	; substitui o botão ao lado do AltGr pelo Ctrl.
+AppsKey::Ctrl 	; substitui o botão ao lado do AltGr pelo Ctrl.
 
 ;Define a janela seleciona como persistente
 ^SPACE::  Winset, Alwaysontop, , A

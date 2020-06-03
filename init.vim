@@ -21,7 +21,7 @@ Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'ervandew/supertab'
-Plug 'zchee/deoplete-jedi'
+"Plug 'zchee/deoplete-jedi'
 Plug 'sbdchd/neoformat'
 Plug 'neomake/neomake'
 Plug 'davidhalter/jedi-vim'
@@ -33,7 +33,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 "Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-surround'
-Plug 'ThePrimeagen/vim-be-good'
+"Plug 'ThePrimeagen/vim-be-good'
 "Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 "Plug 'dylanaraps/wal'
 "Plug 'skywind3000/asyncrun.vim'
@@ -114,15 +114,15 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+"exits insert mode with 'jj'
 imap jj <esc>
-map <C-/> <Plug>NERDCommenterToggle
-vmap <C-/> <Plug>NERDCommenterToggle<CR>gv
 
 " ajusta tamanho do buffer atual
-nnoremap <Up> :resize +2<CR>
-nnoremap <Down> :resize -2<CR>
-nnoremap <Left> :vertical resize +2<CR>
-nnoremap <Right> :vertical resize -2<CR>
+nnoremap <silent> <M-j>    :resize -2<CR>
+nnoremap <silent> <M-k>    :resize +2<CR>
+nnoremap <silent> <M-h>    :vertical resize -2<CR>
+nnoremap <silent> <M-l>    :vertical resize +2<CR>
 
 " Move a linha selecionada pra cima ou para baixo
 xnoremap K :move '<-2<CR>gv-gv
@@ -135,6 +135,7 @@ call deoplete#custom#var('omni', 'input_patterns', {
             \})
 
 let g:vimtex_compiler_progname = 'nvr'
+
 "let g:vimtex_indent_enabled=1
 "let g:vimtex_fold_enabled=1
 "let g:vimtex_fold_manual=0
@@ -152,7 +153,7 @@ let g:tex_fold_enabled = 1
 let g:tex_conceal='abdmg'
 set conceallevel=1
 hi Conceal ctermbg=none
-
+hi Pmenu guibg=gray
 let g:vimtex_quickfix_mode=0
 "let g:vimtex_view_general_viewer = 'SumatraPDF'
 let g:vimtex_view_general_options
