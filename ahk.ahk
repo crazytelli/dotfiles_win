@@ -28,6 +28,10 @@ Return
 Run, brave
 Return
 
+<^>!g::
+Run, chrome
+Return
+
 <^>!x:: ; AltGr + x para abrir uma nova janela do excel.
 Run, excel,
 Return 
