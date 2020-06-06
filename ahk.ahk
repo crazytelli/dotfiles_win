@@ -41,7 +41,7 @@ Run, chrome
 Return
 
 <^>!x:: ; AltGr + x para abrir uma nova janela do excel.
-Run, excel,
+Run, excel
 Return 
 
 <^>!v::
