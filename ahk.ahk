@@ -20,8 +20,16 @@ AppsKey::Ctrl 	; substitui o botão ao lado do AltGr pelo Ctrl.
 
 ;-----------------------Atalhos para AltGr------------------------------
 
+; Abrir Bitwarden
+<^>!b::
+Run, "C:\Program Files\Bitwarden\Bitwarden.exe" 
+Return
+
 ; Abrir Calculadora
 <^>!c:: Run calc
+Return
+
+<^>!d:: Run "C:\Users\victo\AppData\Local\Discord\app-0.0.306\Discord.exe"
 Return
 
 <^>!f:: ;AltGr + f para abrir uma nova janela do navegador
@@ -35,19 +43,6 @@ Return
 <^>!x:: ; AltGr + x para abrir uma nova janela do excel.
 Run, excel,
 Return 
-
-<^>!y::
-Run, "https://www.youtube.com/"
-Return
-
-<^>!l::
-Run, "C:\Users\victo\OneDrive\GitHub\latex";
-Return
-
-; Abrir Bitwarden
-<^>!b::
-Run, "C:\Program Files\Bitwarden\Bitwarden.exe" 
-Return
 
 <^>!v::
 Run, "D:\Videos"

@@ -148,7 +148,7 @@ let g:vimtex_compiler_progname = 'nvr'
 "\}
 
 " Usando plugin FastFold:
-let g:tex_fold_enabled = 1
+"let g:tex_fold_enabled = 1
 
 let g:tex_conceal='abdmg'
 set conceallevel=1
