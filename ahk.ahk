@@ -32,6 +32,9 @@ Return
 <^>!d:: Run "C:\Users\victo\AppData\Local\Discord\app-0.0.306\Discord.exe"
 Return
 
+<^>!e:: Run "C:\Program Files\Joplin\Joplin.exe"
+Return
+
 <^>!f:: ;AltGr + f para abrir uma nova janela do navegador
 Run, brave
 Return
