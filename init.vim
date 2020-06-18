@@ -57,7 +57,9 @@ set nowrap
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
+set smartcase
 set incsearch
+set mouse=a
 set wildmode=longest,list,full
 setlocal spell
 set spelllang=pt_br,en_us
@@ -103,10 +105,10 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Automatically deletes all trailing whitespace on save.
 autocmd BufWritePre * %s/\s\+$//e
 
+" NERDtree configuration
 map <leader>nd :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-let NERDTreeIgnore=['\.aux$', '\.synctex.gz$','\.fdb_latexmk', '\.fls', '\.log', '\.bbl', '\.docx', '\.pdf', '\.run.xml', '\.bcf', '\.blg', '\.lof', '\.out', '\.toc']
+let NERDTreeIgnore=['\.aux$', '\.synctex.gz$','\.fdb_latexmk', '\.fls', '\.log', '\.bbl', '\.docx', '\.pdf', '\.run.xml', '\.bcf', '\.blg', '\.lof', '\.out', '\.toc','\.xdv$','\.cb$','\.cb2$',]
 
 "após pesquisar algo com (/), (esc)x2 apaga o highlight
 nnoremap <esc><esc> :noh<CR>
@@ -128,4 +130,9 @@ nnoremap <silent> <M-l>    :vertical resize +2<CR>
 " Move a linha selecionada pra cima ou para baixo
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
+
+" Fzf configurations
+" -------------------------- "
+" Launch fzf with CTRL+P.
+nnoremap <silent> <C-p> :FZF -m<CR>
 
