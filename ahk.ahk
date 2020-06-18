@@ -22,7 +22,7 @@ AppsKey::Ctrl 	; substitui o botão ao lado do AltGr pelo Ctrl.
 
 ; Abrir Bitwarden
 <^>!b::
-Run, "C:\Program Files\Bitwarden\Bitwarden.exe" 
+Run, "C:\Program Files\Bitwarden\Bitwarden.exe"
 Return
 
 ; Abrir Calculadora
@@ -45,7 +45,7 @@ Return
 
 <^>!x:: ; AltGr + x para abrir uma nova janela do excel.
 Run, excel
-Return 
+Return
 
 <^>!v::
 Run, "D:\Videos"
