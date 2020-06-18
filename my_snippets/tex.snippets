@@ -124,6 +124,18 @@ snippet fig "Figure environment" b
 \end{figure}
 endsnippet
 
+snippet rtab "Reference Table"
+Tabela~\ref{tab:$0}
+endsnippet
+
+snippet rfig "Reference Figure"
+Figura~\ref{tab:$0}
+endsnippet
+
+snippet req "Reference Equation"
+Equação~\ref{eq:$0}
+endsnippet
+
 snippet enum "Enumerate" bA
 \begin{enumerate}
 	\item $0
@@ -187,9 +199,9 @@ snippet // "Fraction" iA
 \\frac{$1}{$2}$0
 endsnippet
 
-snippet / "Fraction" i
-\\frac{${VISUAL}}{$1}$0
-endsnippet
+#snippet / "Fraction" i
+#\\frac{${VISUAL}}{$1}$0
+#endsnippet
 
 
 
@@ -241,10 +253,10 @@ snip.rv = eval('latex(' + match.group(1).replace('\\', '').replace('^', '**').re
 `
 endsnippet
 
-priority 1000
-snippet math "mathematicablock" w
-math $1 math$0
-endsnippet
+#priority 1000
+#snippet math "mathematicablock" w
+#math $1 math$0
+#endsnippet
 
 priority 10000
 snippet 'math(.*)math' "math" wr
@@ -345,7 +357,7 @@ snippet part "d/dx" w
 endsnippet
 
 context "math()"
-snippet sq "\sqrt{}" iA
+snippet sq "\sqrt{}" i
 \sqrt{${1:${VISUAL}}} $0
 endsnippet
 
