@@ -1,4 +1,4 @@
-# dotfiles_win
+# dotfiles Windows
 Alguns arquivos de configurações pro Windows
 
 # Gerenciador de pacotes Chocolatey
