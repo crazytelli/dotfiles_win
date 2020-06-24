@@ -1,6 +1,5 @@
 let mapleader = " "
 
-let g:deoplete#enable_at_startup = 1
 let g:tex_flavor = 'latex'
 
 if has('win32') || ('win64')
@@ -46,6 +45,7 @@ Plug 'tpope/vim-surround'
 "Plug 'skywind3000/asyncrun.vim'
 "Plug 'Chiel92/vim-autoformat'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+let g:deoplete#enable_at_startup = 1
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'PotatoesMaster/i3-vim-syntax'
 call plug#end()
