@@ -48,6 +48,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:deoplete#enable_at_startup = 1
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'PotatoesMaster/i3-vim-syntax'
+Plug 'kovetskiy/sxhkd-vim'
 call plug#end()
 
 syntax on
