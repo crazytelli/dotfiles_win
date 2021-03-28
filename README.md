@@ -11,11 +11,13 @@ Como instalar [Chocolatey](https://chocolatey.org/install).
 
 # Instalação dotfiles com *symbolic links*
 
-Após clonar o repositório para o computador, usar a ferramenta *linkshellextension* para criar os links simbólicos das configurações em seus respectivos diretórios.
+Após clonar o repositório para o computador, usar a ferramenta [linkshellextension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html) para criar os links simbólicos das configurações em seus respectivos diretórios. Basta selecionar os arquivos com botão direito e `Selecionar origem do vínculo`, navegar até o diretório correto e `Soltar Vínculo Simbólico`.
 
-A documentação para a ferramenta (LSE) está disponível em [linkshellextension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html)
+### Adicionar o script AutohotKey na inicialização do sistema
 
-Após a instalação, basta selecionar os arquivos com botão direito e criar o link simbólico com a ferramenta no diretório desejado.
+Executar o comando `Win + r` e então: `shell:startup`.
+
+Na pasta do explorer que abrir, criar o link simbólico do arquivo `.ahk`.
 
 ## Caminhos para os arquivos de configurações
 
